@@ -37,48 +37,66 @@
             }
         }
     </style>
-    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <style>
+        img {
+            margin: 0 auto;
+            display: block;
+            margin-top: 20%;
+        }
+    </style>
+    <!--Repositorios de Calendario ------------------------------------------------------------------------------------------------------------- -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <script src="js/mainc.js"></script>
+    <link rel="stylesheet" href="css/style2.css">
+    <!-- Repositorios de videos------------------------------------------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="css/style3.css">
+    <!-- ------------------------------------------------------------------------------------------------------------- -->
 </head>
 <!-- ------------------------------------------------------------------------------------------------------------- -->
+<style>
+    body{
+        background-color: rgb(228, 228, 228);
+    }
+</style>
 
 <body>
+    
     <!-- Encabezado tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4">
+
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">
+                <font style="vertical-align: inherit;">
+
+                    <a href="https://www.ucacue.edu.ec/"><img
+                            src="https://www.ucacue.edu.ec/wp-content/uploads/2020/08/favicon.png" height="60"
+                            width="60"></a>Universidad Catolica de Cuenca
+                </font>
+            </span>
+        </a>
+
+        <ul class="nav nav-pills">
+
+            <li class="nav-item"><a href="#" class="nav-link">
                     <font style="vertical-align: inherit;">
-                        <font style="vertical-align: inherit;"><img
-                                src="https://www.ucacue.edu.ec/wp-content/uploads/2020/08/favicon.png" height="60"
-                                width="45">Universidad Catolica de Cuenca</font>
+                        <font style="vertical-align: inherit;">Caracteristicas</font>
                     </font>
-                </span>
-            </a>
-
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Caracteristicas</font>
-                        </font>
-                    </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Preguntas frecuentes</font>
-                        </font>
-                    </a></li>
-                <li class="nav-item"><a href="#" class="nav-link">
-                        <font style="vertical-align: inherit;">
-                            <font style="vertical-align: inherit;">Acerca de</font>
-                        </font>
-                    </a></li>
-            </ul>
-        </header>
-    </div>
-
+                </a></li>
+            <li class="nav-item"><a href="#" class="nav-link">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Preguntas frecuentes</font>
+                    </font>
+                </a></li>
+            <li class="nav-item"><a href="#" class="nav-link">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Acerca de</font>
+                    </font>
+                </a></li>
+        </ul>
+    </header>
     <!-- ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt -->
     <!-- Partes de Cada columna -->
     <!-- Izquierda -->
@@ -90,16 +108,18 @@
                     <span class="sr-only">Toggle Menu</span>
                 </button>
             </div>
-            <h1><a  class="logo">Curso</a></h1>
+            <h1><a class="logo">Curso</a></h1>
 
 
-            <ul  class="tabs">
-                <li class="active"><a href="#tab1"><span class="fa fa-home mr-3"></span><span class="tab-text">Homepage   </span></a></li>
-                <li><a href="#tab2"><span class="fa fa-user mr-3"></span><span class="tab-text">Lista de Estudiantes</span></a></li>
-                <li><a href="#tab3"><span class="fa fa-sticky-note mr-3"></span><span class="tab-text">Foro de La Asignatura</span></a></li>
-                <li><a href="#tab4"><span class="fa fa-sticky-note mr-3"></span><span class="tab-text">Calificaciones</span></a></li>
-
-
+            <ul class="tabs list-unstyled components mb-5">
+                <li class="active"><a href="#tab1"><span class="fa fa-home mr-3"></span><span class="tab-text">Homepage
+                        </span></a></li>
+                <li><a href="#tab2"><span class="fa fa-user mr-3"></span><span class="tab-text">Lista de
+                            Estudiantes</span></a></li>
+                <li><a href="#tab3"><span class="fa fa-sticky-note mr-3"></span><span class="tab-text">Foro de La
+                            Asignatura</span></a></li>
+                <li><a href="#tab4"><span class="fa fa-sticky-note mr-3"></span><span
+                            class="tab-text">Calificaciones</span></a></li>
             </ul>
         </nav>
 
@@ -107,60 +127,473 @@
 
         <div class="wrap">
 
-        <!--INFORMACION DE LA PAGINAAAAAAAAAA -->
-            <div class="secciones" >
+            <!--INFORMACION DE LA PAGINAAAAAAAAAA -->
+            <div class="secciones p-4 p-md-5 pt-5">
                 <article id="tab1">
                     <br></br>
-                    <h1>Inicio</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam
-                        incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident,
-                        voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis
-                        placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis
-                        id ratione culpa dolorum! Nemo, animi? Eveniet eaque perspiciatis, libero quia, pariatur iusto,
-                        ipsum porro quod, ut tempora cum quo non illum. Non eligendi incidunt sequi, molestias quia
-                        perspiciatis architecto repudiandae quod.</p>
+                    <h1>Homepage</h1>
+                    <section class="contenedor sobre-nosotros">
+                        <div class="contenedor-sobre-nosotros">
+                            <div class="carousel-inner">
+                                <div class="carousel-inner carousel-item active">
+                                    <img src="https://www.ingeniovirtual.com/wp-content/uploads/inteligencia-artificial-en-el-marketing.jpg"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="contenido-textos">
+                                <h3><span>1</span>Inteligencia Artificial</h3>
+                                <p>La Inteligencia Artificial (IA) es la combinación de algoritmos planteados con el
+                                    propósito de crear máquinas que presenten las mismas capacidades que el ser humano.
+                                    Una tecnología que todavía nos resulta lejana y misteriosa, pero que desde hace unos
+                                    años está presente en nuestro día a día a todas horas.</p>
+                            </div>
+                        </div>
+                        <h3>Video Referencia: La Inteligencia Artificial</h3>
+                        <pre>
+                            <div class="”video-responsive”">
+                            <iframe  src="https://www.youtube.com/embed/wVTrXJzZjDA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </pre>
+                    </section>
+                    <hr>
+                    <hr>
+                    <section class="contenedor sobre-nosotros">
+                        <div class="contenedor-sobre-nosotros">
+                            <div class="carousel-inner">
+                                <div class="carousel-inner carousel-item active">
+                                    <img src="http://static1.squarespace.com/static/53aadf1de4b0a0a817640cca/58de71662994caa7c7bc193b/5ac3e452758d462878e5dd5e/1522874588731/bigstock-Internet-Of-Things-Layout-Iot-194210287.jpg?format=1500w"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="contenido-textos">
+                                <h3><span>2</span>IOT(Internet de las cosas)</h3>
+                                <p>El Internet de las cosas (IoT) es el proceso que permite conectar elementos
+                                    físicos cotidianos al Internet: desde objetos domésticos comunes, como las
+                                    bombillas, hasta recursos para la atención de la salud, como los dispositivos
+                                    médicos; también incluyen prendas y artículos personales, como los relojes
+                                    inteligentes, e incluso los semáforos en ciudades inteligentes.</p>
+                            </div>
+                        </div>
+                        <h3>Video Referencia: Video de IOT</h3>
+                        <pre>
+                            <div class="”video-responsive”">
+                            <iframe  src="https://www.youtube.com/embed/gV7l2YOSOQ4" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </pre>
+                    </section>
+                    <hr>
+                    <hr>
+                    <section class="contenedor sobre-nosotros">
+                        <div class="contenedor-sobre-nosotros">
+                            <div class="carousel-inner">
+                                <div class="carousel-inner carousel-item active">
+                                    <img src="https://blog.ida.cl/wp-content/uploads/sites/5/2019/03/Usabilidad-y-accesibilidad.png"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+
+                            <div class="contenido-textos">
+                                <h3><span>3</span>Accesibilidad</h3>
+                                <p>¿Qué es la Accesibilidad Web?
+                                    Se dice que un sitio web es accesible cuando está diseñado, desarrollado y
+                                    establecido su contenido de tal forma que no impida que cualquier persona pueda
+                                    interactuar con él. Una definición muy acertadas es la de la WAI, una iniciativa
+                                    para promover la
+                                    accesibilidad web, del equipo de W3C.
+                                </p>
+                            </div>
+                        </div>
+                        <h3>Video Referencia: Que es la accesibilidad web</h3>
+                        <pre>
+                            <div class="”video-responsive”">
+                            <iframe  src="https://www.youtube.com/embed/wOL0aHyaW2I" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </pre>
+                    </section>
+
                 </article>
+                <!--INFORMACION DE LA PAGINAAAAAAAAAA----------------------------------------------------------- -->
                 <article id="tab2">
                     <br></br>
-                    <h1>Nosotros</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptates unde, consequuntur
-                        aliquid architecto rem numquam expedita minima dolorem pariatur recusandae, eius quod quia
-                        aspernatur id impedit, tenetur! Aspernatur incidunt molestiae dolores animi ea praesentium ipsam
-                        tenetur voluptas cupiditate perspiciatis eum nihil, natus exercitationem libero earum fuga
-                        dignissimos impedit numquam, quasi, placeat officiis voluptates, ad reprehenderit fugiat? Fugiat
-                        aperiam et magni, molestiae, numquam consectetur vitae sapiente cupiditate totam laboriosam
-                        voluptate obcaecati, aliquam placeat? Suscipit dolores fuga laudantium sed, qui magni iusto
-                        dolore quia. Quis fugit exercitationem porro. Rerum nihil omnis recusandae ratione fuga alias
-                        eligendi, earum sunt veritatis praesentium eum perspiciatis. Molestias deserunt, iure neque
-                        animi quod! Impedit reprehenderit cumque, numquam velit quae cum eius quidem similique
-                        laudantium hic deleniti!</p>
+                    
+                    <section class="clientes contenedor">
+                        <h2 class="titulo">LISTA DE ESTUDIANTES</h2>
+                        <br></br>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>Andres Carrion</h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>Ismael Peralta</h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="clientes contenedor">
+                        <br></br>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>Luis Santacruz</h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4> Patricia Pañora</h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="clientes contenedor">
+
+                        <br></br>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>Adriana Ulloa
+                                    </h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>
+
+                                        Gustavo Lozada</h4>
+                                    
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="clientes contenedor">
+
+                        <br></br>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>
+
+                                        Bryam Pinos</h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>
+
+                                        Marlon Avila</h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="clientes contenedor">
+
+                        <br></br>
+                        <div class="cards">
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>
+
+                                        Yanel Aviles </h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1"
+                                    alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>Diego Iglesias
+                                    </h4>
+                                    <p>sebascb16@yahoo.com</p>
+                                    <button>Enviar Mensaje</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="clientes contenedor">
+                        
+                        <div class="cards">
+                            <div class="card">
+                                <img src="https://th.bing.com/th/id/OIP.KslEvOZ2CFCLvEW7fDcmyAHaHa?pid=ImgDet&rs=1" alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>Name</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="" alt="">
+                                <div class="contenido-texto-card">
+                                    <h4>Name</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sapiente!</p>
+                                </div>
+                            </div>
+                        </div>
+
                 </article>
                 <article id="tab3">
                     <br></br>
-                    <h1>Servicios</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam
-                        incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident,
-                        voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis
-                        placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis
-                        id ratione culpa dolorum! Nemo, animi?</p><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum dignissimos at esse, ipsum
-                        rerum assumenda nisi obcaecati! Aliquam iure voluptatem incidunt, explicabo sit labore,
-                        perferendis eius ad vel quia. Praesentium, doloribus. Quisquam provident nostrum totam itaque
-                        debitis, minima, tempore dolores!</p>
+                    <h1><strong>Foro de Asignatura</strong></h1>
+                    <p>Espacio utilizado para presentar los foros en los cuales se participo y su respectiva fecha de
+                        entrega:</p>
+                    <div class="container">
+                        <h1>Listados de Temas</h1>
+                        <div class="row">
+                            <div class="col-7">
+                                <strong>Tema</strong>
+                            </div>
+                            <div class="col-5">
+                                <strong>Fecha de Entrega</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                Foro de Investigacion de Lineamientos de la Programación
+                            </div>
+                            <div class="col-5">
+                                Entregado 01/06/2021
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                Foro de Fundamentos de la Programación
+                            </div>
+                            <div class="col-5">
+                                Entregado 03/06/2021
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                Foro de Socialización del Silabo
+                            </div>
+                            <div class="col-5">
+                                Entregado 05/06/2021
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                Foro de Investigacion de Lenguajes de Programación
+                            </div>
+                            <div class="col-5">
+                                Entregado 10/06/2021
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                Foro de Implementación de Medidas de Bioseguridad
+                            </div>
+                            <div class="col-5">
+                                Entregado 22/06/2021
+                            </div>
+                        </div>
+                    </div>
                 </article>
                 <article id="tab4">
                     <br></br>
-                    <h1>Blog</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea numquam odio voluptate. Aliquam
-                        incidunt similique, et quasi ducimus quos aut autem non dignissimos dicta sit provident,
-                        voluptatibus ut blanditiis perspiciatis cum, vel temporibus minima enim. Asperiores omnis
-                        placeat officiis a tenetur sit recusandae, reprehenderit neque. Tempora quibusdam, perferendis
-                        id ratione culpa dolorum! Nemo, animi? Eveniet eaque perspiciatis, libero quia, pariatur iusto,
-                        ipsum porro quod, ut tempora cum quo non illum. Non eligendi incidunt sequi, molestias quia
-                        perspiciatis architecto repudiandae quod.</p><br>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam ipsa ducimus amet at cumque sed
-                        numquam, explicabo impedit optio quas iste aperiam quidem ipsam rerum libero voluptatibus
-                        perferendis officiis voluptatum!</p>
+                    <h1>Calificaciones</h1>
+                    <p>Las calificaciones de los estudiante sera presentada de manera secuencial en la tabla a
+                        continuacion:</p>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>Estudiante</strong>
+                            </div>
+                            <div class="col-3">
+                                <strong>Actividad 1</strong>
+                            </div>
+                            <div class="col-3">
+                                <strong>Actividad 2</strong>
+                            </div>
+                            <div class="col-3">
+                                <strong>Actividad 3</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>LUIS FERNANDO SANTACRUZ ERRAEZ</strong>
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>DARWIN ISMAEL PERALTA SAGUAY</strong>
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>SEBASTIAN ALEJANDRO CARRION BRAVO</strong>
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>PATRICIA ELIZABETH RODRIGUEZ PAÑORA</strong>
+                            </div>
+                            <div class="col-3">
+                                7
+                            </div>
+                            <div class="col-3">
+                                8
+                            </div>
+                            <div class="col-3">
+                                9
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>ADRIANA FERNANDA ULLOA CASTRO</strong>
+                            </div>
+                            <div class="col-3">
+                                5
+                            </div>
+                            <div class="col-3">
+                                6
+                            </div>
+                            <div class="col-3">
+                                8
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>DIEGO MARCELO IGLESIAS ARGUDO</strong>
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                8
+                            </div>
+                            <div class="col-3">
+                                0
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>WILLIAN MARCELO PERALTA IZQUIERDO</strong>
+                            </div>
+                            <div class="col-3">
+                                0
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                5
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>YANEL ALEXANDRA AVILES VALVERDE</strong>
+                            </div>
+                            <div class="col-3">
+                                9
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                2
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>MARLON ANTONIO AVILA ALARCON</strong>
+                            </div>
+                            <div class="col-3">
+                                8
+                            </div>
+                            <div class="col-3">
+                                5
+                            </div>
+                            <div class="col-3">
+                                4
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <strong>BRYAM ANDRES PINOS CHACA</strong>
+                            </div>
+                            <div class="col-3">
+                                2
+                            </div>
+                            <div class="col-3">
+                                10
+                            </div>
+                            <div class="col-3">
+                                7
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </div>
         </div>
@@ -216,11 +649,34 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <!-- Carrucel:  Links e Imagenes -->
+            <!-- Calendario -->
             <h7>
-                Proximos Eventos
+                Proximos Eventos e Informacion
             </h7>
-
+            <section class="ftco-section">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 text-center mb-5">
+                            <h2 class="heading-section">Tareas</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="calendar calendar-first" id="calendar_first">
+                                <div class="calendar_header">
+                                    <button class="switch-month switch-left"> <i
+                                            class="fa fa-chevron-left"></i></button>
+                                    <h2></h2>
+                                    <button class="switch-month switch-right"> <i
+                                            class="fa fa-chevron-right"></i></button>
+                                </div>
+                                <div class="calendar_weekdays"></div>
+                                <div class="calendar_content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </div>
     </div>
@@ -240,31 +696,26 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-md-4">
-                <h6 class="text-muted lead">Universidad Catolica de Cuenca:</h6>
-                <h6 class="text-muted">
-                    <a href="https://www.ucacue.edu.ec/"><img
-                            src="https://www.ucacue.edu.ec/wp-content/uploads/2020/08/favicon.png" height="60"
-                            width="45"></a>
-                    Pagina Oficial<br>
+                <h6 class="text-muted lead">Universidad Catolica de Cuenca</h6>
 
-                </h6>
 
             </div>
-            <div class="col-xs-12 col-md-4">
-                <h6 class="text-muted lead">copyright de la página</h6>
+            <div class="col-xs-12 col-md-4" id="copyright">
+                <h6 class="text-muted lead">Contactar</h6>
                 <h6 class="text-muted">
+                    Acerca de<br>
+                    Correo<br>
+                    2021 ©<br>
 
-                    2021 ©<br><br>
-                    dsfsdfsdfd<br>
                 </h6>
             </div>
             <div class="col-xs-12 col-md-4">
                 <h6 class="text-muted lead">Política de Privacidad</h6>
                 <h6 class="text-muted">
 
-                    sdfsdfdsdfsd<br>
-                    dsfsdfsdfd<br>
                 </h6>
+                Derechos reservados
+                <br>
             </div>
         </div>
     </div>
